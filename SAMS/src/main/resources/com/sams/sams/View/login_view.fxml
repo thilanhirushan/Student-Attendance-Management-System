@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sams.sams.controller.LoginController">
+    <padding>
+        <Insets bottom="30" left="50" right="50" top="30" />
+    </padding>
+
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Student Attendance System" />
+
+    <Label prefHeight="19.0" prefWidth="58.0" text="Username" />
+    <TextField fx:id="usernameField" promptText="Enter username" />
+
+    <Label text="Password" />
+    <PasswordField fx:id="passwordField" promptText="Enter password" />
+
+    <Button onAction="#handleLogin" text="Login" />
+    <Label fx:id="errorLabel" textFill="red" />
+</VBox>
